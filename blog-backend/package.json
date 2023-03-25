@@ -1,23 +1,29 @@
 {
-  "name": "blog-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "eslint-config-prettier": "^8.8.0",
-    "koa": "^2.14.1",
-    "koa-bodyparser": "^4.4.0",
-    "koa-router": "^12.0.0",
-    "nodemon": "^2.0.22",
-    "prettier": "^2.8.6"
-  },
-  "devDependencies": {
-    "eslint": "^8.36.0"
-  }
+    "name": "blog-backend",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node src",
+        "start:dev": "nodemon --watch src/ src/index.js"
+    },
+    "type": "module",
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "eslint-config-prettier": "^8.8.0",
+        "esm": "^3.2.25",
+        "koa": "^2.14.1",
+        "koa-bodyparser": "^4.4.0",
+        "koa-router": "^12.0.0",
+        "mongoose": "^7.0.3",
+        "nodemon": "^2.0.22",
+        "prettier": "^2.8.6"
+    },
+    "devDependencies": {
+        "eslint": "^8.36.0"
+    }
 }
